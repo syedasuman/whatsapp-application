@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initialised()">
+
+    <main>
+                    <!-- hide-siide-bar -->
+        <div id="mySidenav" class="sidenav">
+            <div class="profile-div">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-arrow-left"></i></a>
+                <P class="profile">Profile</P>
+            </div>
+            <div class="profile-pic" >
+            </div>
+            <div class="profile-name-div">
+                <h6 class="profile-name-heading">Your Name</h6>
+                <div class="enter-name">
+                    <p class="profile-name">Syeda Suman</p>
+                    <i class="fas fa-pen"></i>
+                </div>
+            </div>
+            <div class="account">
+                <p class="account-info">
+                    This is not your username or pin.This name will be visible
+                    to your WhatsApp contacts.
+                </p>
+            </div>
+            <div class="about-div">
+                <h6 class="about">About</h6>
+                <div class="enter-status">
+                    <p class="status">
+                        hey their i am using WhatsApp
+                    </p>
+                    <i class="fas fa-pen"></i>
+                </div>
+            </div>
+        </div>
+
+                <!-- side bar -->
+        <div class="whatsapp-header">
+            <header class="fixed-side-header position-sticky">
+                <header class="side-header">
+                    <div class="side-header-img" onclick="openNav()"></div>
+                    <div class="side-header-icons">
+                        <i class="fas fa-sync-alt"></i>
+                        <i class="fab fa-stack-exchange"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </header>
+            </header>
+            <section class="card-container">
+                <section class="card ">
+                </section>
+            </section>
+        </div>
+                    <!-- main-navbar -->
+        <div id="card-detail" >
+            <nav class="navbar position-sticky">
+                <nav class="nav-div">
+                    <div class="nav-user-img">
+                    </div>
+                    <div class="nav-user-info">
+                        <h6 class="nav-user-name">
+                            Areeba Asif
+                        </h6>
+                        <p class="nav-user-lastseen">
+                            last seen Yesterday at 11:56 PM
+                        </p>
+                    </div>
+                    <div class="nav-icons">
+                        <i class="fab fa-sistrix"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </nav>    
+            </nav>
+            <div id="show-image" class="card-title" > 
+            </div>
+            <p id="show-name" class="card-text">
+                    <span></span>
+            </p>
+            <h5 id="defult" class="card-text">Please choose a contact to view details </h5>
+            
+            <p id="show-number" class="card-text" >
+                    <span></span>
+            </p>
+            <p id="show-email" class="card-text" > 
+                <span></span>
+            </p>
+            <p id="show-status" class="card-text">   
+                <span></span>
+            </p>
+        </div>    
+    </main>
+</body>
+</html>
+
+
+
+<!-- <main>
+        <div class="whatsapp-header">
+            <header class="side-header">
+                <div class="header-img"></div>
+                <div class="header-icons">
+                    <i class="fas fa-sync-alt"></i>
+                    <i class="fab fa-stack-exchange"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </header>
+        
+            <section class="card-container">
+                <section class="card ">
+                </section>
+            </section>
+            </div>
+             -->

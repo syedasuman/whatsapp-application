@@ -1,0 +1,424 @@
+body
+{
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+}
+
+/* main-div */
+
+main
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 400px auto;
+} 
+
+ /* hide-nav-bar */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#f7f7f7;
+    overflow-x: hidden;
+    transition: 0.5s;  
+    border: 1px #999999; 
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+} 
+
+.sidenav .profile-div a > .fas.fa-arrow-left
+{
+    position: absolute;
+    top: 72px;
+    right: 303px;
+    font-size: 33px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.profile-div
+{
+    height:130px;
+    color: white;
+    background-color: #00bfa5;
+    position: relative; 
+}
+
+.profile
+{
+    position: absolute;
+    bottom: 9px;
+    left: 85px;
+    font-size: 22px;
+}
+
+.profile-pic
+{
+    background-image:url('images/dp10.jpg');
+    background-position:center;
+    background-size:cover;
+    width:200px;
+    height: 200px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.profile-name-div, .account, .about-div
+{
+    padding: 20px;
+}
+
+.enter-name, .enter-status
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-name-div, .about-div
+{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-name-heading, .about
+{
+    color:#369d91;
+}
+
+.account-info
+{
+    color: #96a2a9;
+}
+
+.status, .profile-name
+{
+    color: #4b4b4b;
+}
+
+.fas.fa-pen
+{
+    color: #93999c;
+}
+
+/*sidebar-header  */
+
+.whatsapp-header
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.fixed-side-header
+{
+    top: 0;
+    z-index: 0;
+}
+
+.side-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+    height: 64px;
+    border: 1px solid #f3f3f3;
+    background-color: #eeeeee;
+
+}
+
+.side-header-img
+{
+    background-image:url('images/dp10.jpg');
+    background-position:center;
+    background-size:cover;
+    width:45px;
+    height: 45px;
+    border-radius: 1000px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.fas.fa-sync-alt, .fab.fa-stack-exchange, .fas.fa-ellipsis-v, .fab.fa-sistrix, .fas.fa-paperclip
+{
+    padding: 10px;
+    color: #80868a;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+                /* main-navbar */
+
+.navbar
+{
+    background-color: #eeeeee;
+    width:100%;
+    height:63px;
+    padding:8px;
+    top:0;
+    z-index: 0;
+}
+
+.nav-div
+{
+    
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:63px;
+    align-items: center;
+}
+
+.nav-user-img
+{
+    background-image:url('images/nihadp.jpg');
+    background-position:center;
+    background-size:cover;
+    width:45px;
+    height: 45px;
+    border-radius: 1000px;
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+}
+
+.nav-user-info
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 16px;
+    white-space: nowrap;
+}
+
+.nav-user-info > *
+{
+    margin: 0;
+}
+
+.nav-user-name
+{
+    font-weight: bold;
+}
+
+.nav-user-lastseen
+{
+    font-size: 13px;
+}
+
+.nav-icons
+{
+    display: flex;
+}
+
+/* card-scroll */
+
+.card-container::-webkit-scrollbar-track 
+{
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+.card-container
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:90vh;
+} 
+
+/*list*/
+
+.card
+{
+    width:400px;
+    border: 0;
+}
+
+.card-body
+{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    border: 1px solid #f3f3f3;
+    border-radius: 0 !important;
+    padding-left: 1em;
+}
+
+.user-img
+{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    margin: 7px 0;
+}
+
+.user-info > *
+{
+    margin: 0;
+    
+}
+
+.user-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: inherit;
+    margin: 0 18px;
+}
+
+.user-message
+{
+    font-size: 14px;
+    color: #999999;
+}
+
+.user-last-seen > *
+{
+    margin: 0;
+}
+
+.user-last-seen
+{
+    display: flex;
+}
+
+.message-day
+{
+    color: #aaa8a4;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.fas.fa-check-double
+{
+    color: #5acefb;
+    font-size: 12px;
+}
+
+.fas.fa-check, .far.fa-clock
+{
+    font-size: 12px;
+}
+
+                     /*card-detail*/
+
+#card-detail
+{
+    width: 100%;
+    display: flex;
+    /* margin-top: 28px; */
+    flex-direction: column;
+    align-items: center;
+    color: #666666;
+    /* display: grid; */
+    /* height: 100%;
+    grid-template-columns: 400px; */
+}
+
+#show-image
+{
+    width: 200px;
+    height:200px ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1000px;
+}
+
+#defult
+{
+    margin: 0;
+    padding: 0;
+    color: #aaa8a4
+}
+
+#show-name
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#show-number, #show-email
+{
+    font-size: 14px;
+}
+
+.fas.fa-phone
+{
+    font-weight: 900;
+    font-size: 20px;
+    color: #3c8005;
+    margin-right: 6px;
+}
+
+.far.fa-envelope
+{
+    font-size: 20px;
+    margin: 0 5px 0 13px;
+    color: #843583;
+}
+
+#show-status
+{
+    font-size:13px;
+    margin-left: 18px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 500px) {
+    main {
+        grid-template-columns: auto;
+    }
+    .card
+    {
+        width:100%;
+    }
+    #card-detail
+    {
+        margin: 30px 0px;
+    }
+
+}
